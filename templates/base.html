@@ -1,0 +1,46 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form
+            {
+                text-align: center;
+               
+            }
+            fieldset {
+            display: inline-block;
+            text-align: center; 
+            padding: 10px;
+            border: 4px solid  green;
+            margin-left: 430px;;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <link rel="stylesheet" href="{% static 'vijay.css' %}">
+        <fieldset>
+        <form>
+           <label for="nm"> Enter number1:&nbsp;</label>
+            <input type="text" id="num1" /><br/><br/>
+
+           <label for="em"> Enter number2:&nbsp;</label>
+            <input type="text" id="num2" /><br/><br/>
+            <input type="button" value="clickme" onclick="addNumbers()" />
+            
+        </form>
+
+    </fieldset>
+    <p id="result" ></p>
+    <div>
+            <p><marquee behavior="scroll">welcome to bapatla Engineering collage..</marquee> </p>
+    </div>
+    
+        <img src="media\dbmssqlsublang.png" height="180px" weight="220px" /><br/><br/><br/>
+        <img src="media\ph.jpg" height="180px" weight="220px" />
+    
+    </body>
+    <script src="{% static 'add.js' %}"></script>
+
+</html>
